@@ -1,4 +1,5 @@
 import React from "react";
+//Loading screen component 
 
 const Loader = props => {
   return (
