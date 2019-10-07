@@ -1,6 +1,6 @@
-# react-components
-<strong> Reusable React Components </strong>
+# react
+<strong> Reusable React Components & Apps </strong>
 <p>
-  Some simple and useful React components.
+  Some simple and useful React components & Apps.
   Most components require semantic ui
 </p>
