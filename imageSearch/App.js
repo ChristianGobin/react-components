@@ -1,17 +1,14 @@
 import React from "react";
 import "./App.css";
 import SearchBar from "./searchBar";
-const axios = require('axios').default;
+import unsplash from "./api/unsplash";
 
 class App extends React.Component {
   state = {images : []}
   //callback function to be passed as prop to searchBar child component.
   onValueSubmit = value => {
-    //make api request using axios. 
-    axios.get('https://api.unsplash.com/search/photos',{
-      params:{query: value},
-      headers:{Authorization: 'Client-ID 2a80ec61a4997acededfaadf11414dbd642432711c839758518df8f2ea6bb737'}
-    })
+    //make api request using unsplash.js -> axios.create. 
+    unsplash.get({params:{query: value}})
       //if api request is successful then set state equal to results.
       //then display results in the main div.
       .then(response => {this.setState({images: response.data.results});})
