@@ -8,7 +8,7 @@ class App extends React.Component {
   //callback function to be passed as prop to searchBar child component.
   onValueSubmit = value => {
     //make api request using unsplash.js -> axios.create. 
-    unsplash.get({params:{query: value}})
+    unsplash.get('/search/photos',{params:{query: value}})
       //if api request is successful then set state equal to results.
       //then display results in the main div.
       .then(response => {this.setState({images: response.data.results});})
