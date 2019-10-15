@@ -1,6 +1,6 @@
 const axios = require("axios").default;
 const instance = axios.create({
-  baseURL: '"https://api.unsplash.com/search/photos"',
+  baseURL: "https://api.unsplash.com",
   timeout: 1000,
   headers: {
     Authorization:
