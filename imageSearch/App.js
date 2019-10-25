@@ -21,6 +21,7 @@ class App extends React.Component {
       <div className="ui container">
         <SearchBar apiCall={this.onValueSubmit}></SearchBar>
         <p>Number of Images Found: {this.state.images.length} </p>
+        <ImageList images={this.state.images} />
       </div>
     );
   }
