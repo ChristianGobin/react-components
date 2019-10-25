@@ -7,14 +7,12 @@ import ImageList from "./imageList";
 class App extends React.Component {
   state = {images : []}
   //callback function to be passed as prop to searchBar child component.
-  onValueSubmit = value => {
+  onValueSubmit = async value => {
     //make api request using unsplash.js -> axios.create. 
-    unsplash.get('/search/photos',{params:{query: value}})
+    let res = await unsplash.get('/search/photos',{params:{query: value}})
       //if api request is successful then set state equal to results.
       //then display results in the main div.
-      .then(response => {this.setState({images: response.data.results});})
-      //handle error if api request fails
-      .catch(error => {console.log(error);})
+      this.setState({images: res.data.results});
   }
   render() {
     return (
