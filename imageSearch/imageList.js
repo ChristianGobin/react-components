@@ -6,7 +6,7 @@ const ImageList = props => {
   //destructure properties of image we use to avoid repeating 'image.something'
   const Images = props.images.map(({urls, description, id}) => {
     return (
-      <img src={urls.regular} alt={description} key={id/>
+      <img src={urls.regular} alt={description} key={id}/>
     );
   });
   return <div className="ui grid">{imageRender}</div>;
