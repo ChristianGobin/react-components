@@ -2,7 +2,7 @@ import React from 'react';
 
 class ImageCard extends React.Component{
     render(){
-        return(<div>This is this connected</div>)
+        return(<div>{this.props.test}</div>)
     }
 }
 

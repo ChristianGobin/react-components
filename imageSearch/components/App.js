@@ -21,7 +21,7 @@ class App extends React.Component {
         <SearchBar apiCall={this.onValueSubmit}></SearchBar>
         <p>Number of Images Found: {this.state.images.length} </p>
         <ImageList images={this.state.images} />
-        <ImageCard />
+        <ImageCard test="This is the test prop"/>
       </div>
     );
   }
