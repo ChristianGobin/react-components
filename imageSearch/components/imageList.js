@@ -9,7 +9,7 @@ const ImageList = props => {
       <img src={urls.regular} alt={description} key={id}/>
     );
   });
-  return <div className="ui grid">{imageRender}</div>;
+  return <div className="ui grid">{Images}</div>;
 };
 
 export default ImageList;
