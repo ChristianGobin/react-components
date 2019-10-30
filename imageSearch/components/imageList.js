@@ -1,12 +1,12 @@
 import React from "react";
-
+import ImageCard from "./ImageCard";
 const ImageList = props => {
   //create an array called Images using the .map() function on the prop images. 
-  //render images with a key and alt using properties of each image.
-  //destructure properties of image we use to avoid repeating 'image.something'
-  const Images = props.images.map(({urls, description, id}) => {
+  //render individual image cards for each image being mapped. 
+  const Images = props.images.map((image) => {
     return (
-      <img src={urls.regular} alt={description} key={id}/>
+      //Pass Each Image as a prop to the ImageCard for processing and eventual render.
+      <ImageCard key={image.id} image={image}/>
     );
   });
   return <div className="ui grid">{Images}</div>;
