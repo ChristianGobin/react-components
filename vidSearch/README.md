@@ -1,4 +1,10 @@
 ### Video Search Application:
+<h4> To Use: run 'npx create-react-app vidsearch' in bash then clone repo and replace src folder and run 'npm build' </h4>
 <p>
-  This is an image search app, much like youtube. I will use the Youtube API to search videos using the input of the user in the Search Bar component. The result will be a rendered video with several thumbnails of other recommended videos pertaining to the search term. 
-</p>
+  Search Videos and Watch them. 
+</p> </br>
+<h4> Tools Needed </h4>
+<ul>
+  <li> Semantic UI for syle </li>
+  <li> Axios </li>
+  <li> React Dependencies </li> 
