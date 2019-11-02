@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
+import YoutubeApi from '../components/YoutubeApi';
 import '../App.css';
 
 class App extends React.Component {
