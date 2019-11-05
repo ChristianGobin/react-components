@@ -14,11 +14,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="vidApp">
+      <header className="ui header">
+          Search Videos.
+        </header>
         <SearchBar onFormSubmit={this.onFormSubmit} />
         <VideoList query={this.state.value} />
-        <p style={{ textAlign: 'center' }}>
-          There is a video here.
-        </p>
       </div >
     )
   }
