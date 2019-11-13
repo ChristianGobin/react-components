@@ -7,9 +7,9 @@ import '../App.css';
 class App extends React.Component {
   onFormSubmit = (value) => {
     //make request to api using value
-    this.setState = ({
-      query: value
-    })
+    this.setState = ({query: value});
+    //Make get request using API Here
+    //YoutubeApi.get()
   }
   render() {
     return (
@@ -18,7 +18,7 @@ class App extends React.Component {
           Search Videos.
         </header>
         <SearchBar onFormSubmit={this.onFormSubmit} />
-        <VideoList query={this.state.value} />
+        <p> Current Query: {this.state.query} </p>
       </div >
     )
   }
