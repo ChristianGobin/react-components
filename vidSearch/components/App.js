@@ -5,20 +5,22 @@ import YoutubeApi from '../components/YoutubeApi';
 import '../App.css';
 
 class App extends React.Component {
-  onFormSubmit = (value) => {
-    //make request to api using value
-    this.setState = ({query: value});
+  state = {videos: []};
+  onFormSubmit = async (value) => {
     //Make get request using API Here
-    //YoutubeApi.get()
+    const response = await YoutubeApi.get('/search', {
+      params:{ q: value }
+    })
+    this.setState({videos: response.data.items})
   }
   render() {
     return (
-      <div className="vidApp">
-      <header className="ui header">
-          Search Videos.
-        </header>
+      <div className="vidApp ui container">
+      <h2 style={{textAlign: 'center', color:'#EE82EE'}}>
+        React Video Search by Christian Gobin
+      </h2>
         <SearchBar onFormSubmit={this.onFormSubmit} />
-        <p> Current Query: {this.state.query} </p>
+        <VideoList videos={this.state.videos}/>
       </div >
     )
   }
