@@ -4,7 +4,8 @@
 </p> 
 <h4> Tools Used </h4>
 <ul>
-  <li> Semantic UI for syle </li>
+  <li> React-Dom </li>
+  <li> video-react </li>
+  <li> Semantic UI</li>
   <li> Axios </li>
-  <li> React Dependencies </li> 
   <li> Youtube API </li>
