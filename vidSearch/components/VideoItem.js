@@ -5,7 +5,7 @@ import './videoItem.css';
 function VideoItem({ vid, selectedVid }) {
     return (
         //onClick to track selected vid 
-        <div className="item video-item" onClick={()=>{selectedVid(vid.snippet.title)}}>
+        <div className="item video-item" onClick={()=>{selectedVid(vid)}}>
             <img className="ui image" src={vid.snippet.thumbnails.medium.url} />
             <div className="content">
                 <a className="header">
