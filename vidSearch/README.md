@@ -1,6 +1,6 @@
 ### Video Search Application:
 <p>
-  Search Videos and Watch them. 
+  Search the YoutubeAPI for videos and stream them. 
 </p> 
 <h4> Tools Used </h4>
 <ul>
