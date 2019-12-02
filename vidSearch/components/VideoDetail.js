@@ -1,9 +1,9 @@
 import React from 'react';
 
 //component shows video title and desciption + video player
-const VideoDetail = ({ vid }) => {
+const VideoDetail = ({ video }) => {
     //conditional rendering... if no video is set.
-    if (!vid) {
+    if (!video) {
         return (
             <div>
                 ...Loading.
@@ -13,9 +13,9 @@ const VideoDetail = ({ vid }) => {
     return (
         <div>
             <div className="ui segment">
-                <h4 className="ui header">{vid.snippet.title}</h4>
+                <h4 className="ui header">{video.snippet.title}</h4>
                 <p className="ui description">
-                    {vid.snippet.description}
+                    {video.snippet.description}
                 </p>
             </div>
         </div>
