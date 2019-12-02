@@ -2,9 +2,10 @@ import React from 'react';
 import './videoItem.css';
 
 //prop vid = individual video object from vid list.
-function VideoItem({ vid }) {
+function VideoItem({ vid, selectedVid }) {
     return (
-        <div className="item video-item">
+        //onClick to track selected vid 
+        <div className="item video-item" onClick={()=>{selectedVid(vid.snippet.title)}}>
             <img className="ui image" src={vid.snippet.thumbnails.medium.url} />
             <div className="content">
                 <a className="header">
