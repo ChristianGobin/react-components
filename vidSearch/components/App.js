@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
+import VideoDetail from './VideoDetail';
 import YoutubeApi from '../api/YoutubeApi';
 import '../App.css';
 
@@ -15,7 +16,8 @@ class App extends React.Component {
   }
   //Function tracks what vid is selected. 
   selectedVid = (vid) {
-    console.log(vid + ' is the selected video.');
+    console.log(vid.snippet.title + ' is the selected video.');
+    this.setState({selectedVid: vid});
   }
   render() {
     return (
@@ -24,6 +26,7 @@ class App extends React.Component {
         React Video Search by Christian Gobin
       </h2>
         <SearchBar onFormSubmit={this.onFormSubmit} />
+        <VideoDetail video={this.state.selectedVid} />
         <VideoList videos={this.state.videos} selectedVid = {this.selectedVid}/>
       </div >
     )
