@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
-import YoutubeApi from '../components/YoutubeApi';
+import YoutubeApi from '../api/YoutubeApi';
 import '../App.css';
 
 class App extends React.Component {
@@ -13,6 +13,10 @@ class App extends React.Component {
     })
     this.setState({videos: response.data.items})
   }
+  //Function tracks what vid is selected. 
+  selectedVid = (vid) {
+    console.log(vid + ' is the selected video.');
+  }
   render() {
     return (
       <div className="vidApp ui container">
@@ -20,7 +24,7 @@ class App extends React.Component {
         React Video Search by Christian Gobin
       </h2>
         <SearchBar onFormSubmit={this.onFormSubmit} />
-        <VideoList videos={this.state.videos}/>
+        <VideoList videos={this.state.videos} selectedVid = {this.selectedVid}/>
       </div >
     )
   }
