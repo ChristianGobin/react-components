@@ -10,8 +10,13 @@ const VideoDetail = ({ video }) => {
             </div>
         )
     }
+    //url of video 
+    const vidSrc = `https://youtube.com/embed/${video.id.videoId}`;
     return (
         <div>
+            <div className="ui embed">
+                <iframe src={vidSrc} />
+            </div>
             <div className="ui segment">
                 <h4 className="ui header">{video.snippet.title}</h4>
                 <p className="ui description">
