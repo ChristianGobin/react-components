@@ -1,4 +1,4 @@
-# react
+# React + Redux
 <strong> Reusable React Components & Apps </strong>
 <p>
   Some simple and useful React components & Apps.
