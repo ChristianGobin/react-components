@@ -1,6 +1,6 @@
 ### Video Search Application:
 <p>
-  Search the YoutubeAPI for videos and stream them. 
+  Single Page Web Application : Search the YoutubeAPI for videos and watch them.
 </p> 
 <h4> Tools Used </h4>
 <ul>
