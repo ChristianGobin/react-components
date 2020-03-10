@@ -4,8 +4,12 @@ import SongDetail from './SongDetail';
 import './App.css';
 
 const App = () => {
+  let style = {
+     padding: '5px',
+     margin: '20px'
+  }
   return (
-    <div className="ui container grid">
+    <div className="ui container grid" style={style}>
       <div className="ui row">
         <div className="column eight wide">
           <SongList />
