@@ -21,4 +21,4 @@ const selectedSongReducer = (selectedSong = null, action) => {
 }
 
 //set keys of combine reducers to each reducer.
-export default combineReducers({ songListReducer: songListReducer, selectedSongReducer: selectedSongReducer });
+export default combineReducers({ songListReducer, selectedSongReducer });
