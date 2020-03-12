@@ -1,18 +1,15 @@
 import React from 'react';
-import movieList from '../reducers/index'
 import './index.css';
+import MlComponent from './mlComponent';
 
 export default function App() {
     const style = {
-        'text-align': 'center'
+        'textAlign': 'center',
+        'display': 'flex-column',
+
     }
-    const movies = movieList.map((movie) =>
-        <button type='button' className='list-group-item' onClick={e => console.log('You Selected ' + movie.title)}>
-            {movie.title}
-        </button>
-    )
     return (
-        <div className="container">
+        <div className="container" style={style}>
             <div className="jumbotron">
                 <h1 className="display-4">Christian Gobin's Redux Application</h1>
                 <p className="lead">This is a simple single page web application that showcases the use of the React-Redux library. Click on a Movie to Reveal it's Summary.</p>
@@ -30,12 +27,11 @@ export default function App() {
             </div>
             <h5
                 className='list-group-item-heading'
-                style={style}
             >
                 Select a Movie
             </h5>
             <ul className='list-group'>
-                {movies}
+                <MlComponent />
             </ul>
         </div>
     )
