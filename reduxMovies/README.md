@@ -9,4 +9,4 @@
   finally replace the src folder with a clone of my src folder and run <code>npm build</code>.
 </p>
 <p> 
-  For styling: Add '''<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> ''' to the head tag of the index.html file located in the public folder of the app.
+  For styling: Add <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/> to the head tag of the index.html file located in the public folder of the app.
