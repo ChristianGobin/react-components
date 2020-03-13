@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import MovieCard from './MovieCard';
 import MlComponent from './mlComponent';
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
             <ul className='list-group'>
                 <MlComponent />
             </ul>
+            <MovieCard />
         </div>
     )
 }
